@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="40dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/t1"
+        android:textColor="@color/colorPrimaryDark"
+        android:textColorHint="#3949AB"
+        app:layout_constraintBottom_toTopOf="@+id/editText2"
+        app:layout_constraintStart_toStartOf="@+id/editText2" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="287dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textView2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.97"
+        tools:layout_editor_absoluteX="26dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="21dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/t2"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/editText3"
+        app:layout_constraintStart_toStartOf="@+id/editText3" />
+
+    <EditText
+        android:id="@+id/editText3"
+        android:layout_width="287dp"
+        android:layout_height="18dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="@+id/editText2" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="39dp"
+        android:layout_height="22dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/t3"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/editText4"
+        app:layout_constraintStart_toStartOf="@+id/editText4" />
+
+    <EditText
+        android:id="@+id/editText4"
+        android:layout_width="287dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="@+id/editText3" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="36dp"
+        android:layout_height="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/t4"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/editText5"
+        app:layout_constraintStart_toStartOf="@+id/editText5" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="287dp"
+        android:layout_height="20dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="@+id/editText4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="69dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="204dp"
+        android:layout_marginRight="204dp"
+        android:layout_marginBottom="120dp"
+        android:text="@string/b1"
+        android:textColor="#009688"
+        android:textColorHighlight="#F5F5F5"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="69dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="@string/b3"
+        android:textColor="#009688"
+        app:layout_constraintEnd_toStartOf="@+id/button4"
+        app:layout_constraintStart_toEndOf="@+id/button2"
+        app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="69dp"
+        android:layout_height="34dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="116dp"
+        android:text="@string/b2"
+        android:textColor="#009688"
+        app:layout_constraintBottom_toBottomOf="@+id/button3"
+        app:layout_constraintTop_toBottomOf="@+id/editText6"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="283dp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="76dp"
+        android:layout_height="21dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="12dp"
+        android:text="@string/t5"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toTopOf="@+id/editText6"
+        app:layout_constraintStart_toStartOf="@+id/editText6" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="287dp"
+        android:layout_height="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/editText5"
+        tools:layout_editor_absoluteY="400dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="136dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/t6"
+        android:textColor="#009688"
+        android:textColorLink="#9C27B0"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView"
+        app:layout_constraintEnd_toEndOf="@+id/editText2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>
